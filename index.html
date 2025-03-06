@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Collaborative Playlist Beta Sign-Up</title>
+    <link rel="stylesheet" href="meyers_and_normalize-form_reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
 </head>
 <body>
+    <header>
+        <h1>Join the Future of Collaborative Playlists</h1>
+        <p>Create and share playlists with friends in real time around the world.</p>
+    </header>
     
+    <main>
+        <section class="signup-section">
+            <h2>Sign Up for Early Beta Access</h2>
+            <p>Be among the first to experience the next evolution of playlist sharing!</p>
+            
+            <form id="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required>
+
+                <label for="streaming-app">Streaming Platform:</label>
+                <select id="streaming-app" name="streaming-app" required>
+                    <option value="">Select Platform</option>
+                    <option value="spotify">Spotify</option>
+                    <option value="apple-music">Apple Music</option>
+                </select>
+                
+                <label for="music-genre">Favorite Music Genre:</label>
+                <select id="music-genre" name="music-genre" required>
+                    <option value="">Select Genre</option>
+                    <option value="rock">Rock</option>
+                    <option value="indie">Indie</option>
+                    <option value="house">House</option>
+                    <option value="rap">Rap</option>
+                    <option value="pop">Pop</option>
+                    <option value="hip-hop">Hip-Hop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="edm">EDM</option>
+                    <option value="classical">Classical</option>
+                </select>
+                
+                <button type="submit">Join Beta</button>
+            </form>
+            
+            <p id="confirmation-message" class="hidden">Thank you for signing up! Check your email for details.</p>
+        </section>
+    </main>
 </body>
 </html>
