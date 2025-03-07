@@ -102,3 +102,21 @@ button {
 button:hover {
     background: #26c598;
 }
+
+@media (min-width: 768px) {
+    .signup-section {
+        max-width: 550px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .signup-section {
+        max-width: 500px;
+    }
+}
