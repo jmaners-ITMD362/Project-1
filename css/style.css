@@ -103,6 +103,37 @@ button:hover {
     background: #26c598;
 }
 
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .signup-section {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.9rem;
+        padding-right: 0;
+    }
+}
+
 @media (min-width: 768px) {
     .signup-section {
         max-width: 550px;
