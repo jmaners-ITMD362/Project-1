@@ -49,7 +49,7 @@ p {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
     width: 100%;
 }
