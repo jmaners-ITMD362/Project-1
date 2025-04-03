@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Collaborative Playlist Beta Sign-Up</title>
-    <link rel="stylesheet" href="css/meyers_and_normalize-form_reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/meyers_and_normalize-form_reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" async></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Join the Future of Collaborative Playlists</h1>
-        <p>Create and share playlists with friends in real time around the world.</p>
+      <h1>Join the Future of Collaborative Playlists</h1>
+      <p>
+        Create and share playlists with friends in real time around the world.
+      </p>
     </header>
-    
     <main>
-        <section class="signup-section">
-            <h2>Sign Up for Early Beta Access</h2>
-            <p>Be one of the first to experience the next generation of playlist sharing!</p>
-            
-            <form id="signup-form">
-                <label for="firstname">First Name:</label>
-                <input type="text" id="firstname" name="firstname" placeholder="John" required>
-
-                <label for="lastname">Last Name:</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Smith" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com" required>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
-
-                <label for="streaming-app">Streaming Platform:</label>
-                <select id="streaming-app" name="streaming-app" required>
-                    <option value="">Select Platform</option>
-                    <option value="spotify">Spotify</option>
-                    <option value="apple-music">Apple Music</option>
-                    <option value="soundcloud">SoundCloud</option>
-                    <option value="youtube">Youtube Music</option>
-                    <option value="amazon">Amazon Music</option>
-
-                </select>
-
-                <label for="username" id="username-label">Platform Username:</label>
-                <input type="text" id="username" name="username" placeholder="JohnSmith" required>       
-                
-                <label for="music-genre">Favorite Music Genre:</label>
-                <select id="music-genre" name="music-genre" required>
-                    <option value="">Select Genre</option>
-                    <option value="rock">Rock</option>
-                    <option value="indie">Indie</option>
-                    <option value="house">House</option>
-                    <option value="rap">Rap</option>
-                    <option value="pop">Pop</option>
-                    <option value="hip-hop">Hip-Hop</option>
-                    <option value="jazz">Jazz</option>
-                    <option value="edm">EDM</option>
-                    <option value="classical">Classical</option>
-                    <option value="folk">Folk</option>
-                    <option value="country">Country</option>
-                    <option value="r&b">R&B</option>
-                    <option value="kpop">K-Pop</option>
-                    <option value="metal">Metal</option>
-                </select>
-
-                <button type="submit">Sign Up</button>
-            </form>
-        </section>
+      <section class="signup-section">
+        <h2>Sign Up for Early Beta Access</h2>
+        <p>
+          Be one of the first to experience the next generation of playlist
+          sharing!
+        </p>
+        <form id="signup-form" method="get" action="#null" autocomplete="on">
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="John"
+            required
+          />
+          <label for="lastname">Last Name:</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Smith"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+          />
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="(555) 555-5555"
+            required
+          />
+          <label for="streaming-app">Streaming Platform:</label>
+          <select id="streaming-app" name="streaming-app" required>
+            <option value="">Select Platform</option>
+            <option value="spotify">Spotify</option>
+            <option value="apple-music">Apple Music</option>
+            <option value="soundcloud">SoundCloud</option>
+            <option value="youtube">Youtube Music</option>
+            <option value="amazon">Amazon Music</option>
+          </select>
+          <label for="username" id="username-label">Platform Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="JohnSmith"
+            required
+          />
+          <label for="music-genre">Favorite Music Genre:</label>
+          <select id="music-genre" name="music-genre" required>
+            <option value="">Select Genre</option>
+            <option value="rock">Rock</option>
+            <option value="indie">Indie</option>
+            <option value="house">House</option>
+            <option value="rap">Rap</option>
+            <option value="pop">Pop</option>
+            <option value="hip-hop">Hip-Hop</option>
+            <option value="jazz">Jazz</option>
+            <option value="edm">EDM</option>
+            <option value="classical">Classical</option>
+            <option value="folk">Folk</option>
+            <option value="country">Country</option>
+            <option value="r&b">R&B</option>
+            <option value="kpop">K-Pop</option>
+            <option value="metal">Metal</option>
+          </select>
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>

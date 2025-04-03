@@ -1,153 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #71a6d6;
-    color: #2ceaac;
-    text-align: center;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #71a6d6;
+  color: #2ceaac;
+  text-align: center;
 }
 
 header {
-    padding: 40px 20px;
-    background: #2ceaac;
-    color: #71a6d6;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  background: #2ceaac;
+  color: #71a6d6;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 20px;
 }
 
 p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    opacity: 0.9;
-    margin: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin: 20px;
 }
 
 .signup-section {
-    max-width: 450px;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.signup-section h2{
-    color: #ffffff;
-    font-size: 25px;
+.signup-section h2 {
+  color: #ffffff;
+  font-size: 25px;
 }
 
-.signup-section p{
-    color: #ffffff;
-    font-size: 20px;
+.signup-section p {
+  color: #ffffff;
+  font-size: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+form button {
+  align-self: center;
 }
 
 label {
-    font-weight: 500;
-    text-align: left;
-    display: block;
-    font-size: 1rem;
-    opacity: 0.9;
-    color: #ffffff;
-    width: 100%;
-    max-width: 400px;
-    margin: 0;
-    padding-right: 130px
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
 }
 
-input, select {
-    width: 100%;
-    max-width: 1000px;
-    padding: 14px;
-    border: 2px solid #2ceaac;
-    background: rgba(255, 255, 255, 0.2);
-    color: #757575;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border 0.3s ease;
-    text-align: left;
-    display: block;
-    box-sizing: border-box;
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #2ceaac;
+  background: rgba(255, 255, 255, 0.2);
+  color: #757575;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
 }
 
-input:focus, select:focus {
-    border-color: #ffffff;
-    outline: none;
+input:focus,
+select:focus {
+  border-color: #ffffff;
+  outline: none;
 }
 
 button {
-    background: #2ceaac;
-    color: #71a6d6;
-    padding: 16px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 600;
+  background: #2ceaac;
+  color: #71a6d6;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
 }
 
 button:hover {
-    background: #26c598;
+  background: #26c598;
 }
 
-@media (max-width: 400px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .signup-section {
-        max-width: 90%;
-        padding: 20px;
-    }
-
-    input, select, button {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    button {
-        font-size: 1rem;
-        padding: 12px;
-        width: 100%;
-    }
-
-    label {
-        font-size: 0.9rem;
-        padding-right: 0;
-    }
+@media (min-width: 400px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .signup-section {
+    max-width: 90%;
+  }
+  input,
+  select,
+  button {
+    font-size: 1rem;
+  }
+  label {
+    font-size: 0.95rem;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 768px) {
-    .signup-section {
-        max-width: 550px;
-    }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .signup-section {
+    max-width: 550px;
+  }
+  input,
+  select,
+  button {
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 1024px) {
-    h1 {
-        font-size: 3.5rem;
-    }
-    p {
-        font-size: 1.5rem;
-    }
-    .signup-section {
-        max-width: 500px;
-    }
+  h1 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .signup-section {
+    max-width: 650px;
+  }
 }
